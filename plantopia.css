@@ -1,0 +1,513 @@
+@charset "utf-8";
+/* CSS Document */
+.navi {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #3F5B68;
+}
+
+.nav_part{
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.activeNav {
+  background-color: #A0B89F;
+}
+
+
+/*homepage image*/
+body, html {
+ 	 height: 100%;
+	}
+
+
+
+.parallax1 {
+	
+  /* The image used */
+  background-image:url("images/topHomepic.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1200px) {
+  .parallax1 {
+    background-attachment: scroll;
+  }
+}
+
+.heading1{
+	float:right;
+	background:rgb(255,255,255);
+	width:50%;
+	padding:15px;
+	padding-top:50px;
+	height:795px;
+	transform:translate(0,-14.75%);
+	z-index: 10; 
+	opacity:0.75;
+	font-size:185px;
+}
+/*PARRALAX 2*/
+
+.parallax2 {
+	
+  /* The image used */
+  background-image:url("images/bottomHomepic.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment:fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1200px) {
+  .parallax1 {
+    background-attachment: scroll;
+  }
+}
+
+.heading2{
+	float:left;
+	background:rgb(255,255,255);
+	width:50%;
+	padding:15px;
+	padding-top:50px;
+	height:795px;
+	transform:translate(0,-43%);
+	z-index: 11; 
+	opacity:0.75;
+	font-size:185px;
+}
+
+
+.homepgTXT button{
+	transform:scale(3);
+	border:none;
+	font-family: roboto, sans-serif;
+	clear:both;
+	margin:35px;
+}
+
+/*universal*/
+h1{
+	text-align: center;
+	font-family: roboto, sans-serif;
+	font-weight: 600;
+	font-style:normal;
+	color:#3F5B68;
+	font-size:50px;
+}
+
+
+h2{
+	text-align:center;
+	font-family: roboto, sans-serif;
+	font-weight:200;
+	font-size:35px;
+}
+footer{
+	text-align:center;
+	background-color: #A0B89F;
+	line-height:40%;
+	font-size:10px;
+}
+
+
+.toRehab{
+	transition: all 0.5s;
+  cursor: pointer;
+	
+}
+
+
+.toRehab span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.toRehab span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.toRehab:hover span {
+  padding-right: 25px;
+}
+
+.toRehab:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+.dyingPlant{
+	background-color: #E1D5A9;
+}
+
+.collage{
+	opacity:0.4;
+	margin:0;
+}
+
+.left{
+	float:left;
+}
+
+.right{
+	float:right;
+}
+/*putting button on top of collage*/
+
+.toShop {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left:42%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+	background:#3F5B68;
+	color:#C4C4C4;
+	transition: all 0.5s;
+  cursor: pointer;
+	
+}
+
+.toShop span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.toShop span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.toShop:hover span {
+  padding-right: 25px;
+}
+
+.toShop:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+/*PLANT CATEGORIES PAGE*/
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+.categories img{
+	opacity:.5;
+	-webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.categories img:hover{
+  box-shadow: 0 12px 25px 0 #DC8282,0 17px 50px 0 rgba(0,0,0,0.19);
+	opacity:1;
+	-ms-transform: scale(1.25); /* IE 9 */
+  -webkit-transform: scale(1.25); /* Safari 3-8 */
+  transform: scale(1.25); 
+}
+
+
+/*REHAB PAGE*/
+.topPics img{
+	margin-bottom:20px;
+}
+.greenThumb{
+	background: #E4A972;
+}
+
+.howWillWork{
+	background:#E1D5A9;
+}
+.whyUs{
+	background:#DC8282;
+}
+.rehabTxt{
+	font-size:30px;
+	margin:20px;
+	padding:20px;
+	font-family: roboto, sans-serif;
+	font-weight:200;
+}
+
+.buttonRehabMore{
+	text-align:center;
+	margin:20px;
+}
+
+.rehabMore{
+	background:#3F5B68;
+	transform: scale(2.5);
+	color:#A0B89F;
+	border:none;
+	padding:5px;
+	opacity:0.5;
+	font-family: roboto, sans-serif;
+}
+
+.rehabMore:hover{
+	opacity:1;
+}
+
+
+
+
+
+
+
+/*ARTICLES PAGE*/
+.green{
+	background:#A0B89F;
+}
+
+.articles{
+	font-size:17px;
+	margin:20px;
+	padding:10px;
+	font-family: roboto, sans-serif;
+	font-weight:20;
+}
+
+h3{
+	font-size:30px;
+	margin:30px;
+	padding:15px;
+	font-family: roboto, sans-serif;
+	font-weight:300;
+	line-height:0.01;
+	color:#DC8282;
+}
+
+.learnMoreOn{
+	color:#DC8282;
+}
+
+
+.headingArt{
+	line-height: .3;
+}
+
+/*BUY PLANT PAGE*/
+.productInfoWH{
+	background:#E1D5A9;
+}
+
+.productInfo, ul{
+	font-size:20px;
+	margin:20px;
+	padding:10px;
+	font-family: roboto, sans-serif;
+	font-weight:20;
+	overflow:auto;
+}
+
+.putCart{
+	transform:scale(2.5) translate(-50%,-210%);
+	border:none;
+	background: #3F5B68;
+	color:#A0B89F;
+	clear:both;
+	margin:20px;
+	font-family: roboto, sans-serif;
+	padding-left:50px;
+	padding-right:50px;
+}
+
+.putCart:hover{
+	opacity:0.6;
+}
+
+
+
+/*CHAT POP UP*/
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}

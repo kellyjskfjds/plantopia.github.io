@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Plantopia Rehab</title>
+	<link rel="stylesheet" href="plantopia.css">
+</head>
+
+<body>
+	<div class="navi">
+		<ul class="navi">
+  			<li class="nav_part"><a href="index.html">Home</a></li>
+ 			 <li class="nav_part"><a href="shop.html">Plants</a></li>
+ 			 <li class="nav_part"><a class="activeNav" href="rehab.html">Rehab</a></li>
+  			<li class="nav_part"><a href="articles.html">Articles</a></li>
+		</ul>
+	</div>
+	
+	<div class="topPics">
+		<div class="topPicsFade"><img src="images/rehabbing/drooopin.JPG" width="100%" height="10%"></div>
+		<div class="topPicsFade"><img src="images/rehabbing/sickFicus.jpg" width="100%" height="10%"></div>
+		<div class="topPicsFade"><img src="images/rehabbing/wilted.jpg" width="100%" height="10%"></div>
+	</div>
+	
+	
+	<h1>----------REHABBING----------</h1>
+	
+	<div class="greenThumb" style="overflow:auto">
+		<h2 style="font-size:40px">Need a green Thumb?</h2>
+		<img src="images/rehabbing/repotting.jpg" width="25%" style="float:right;margin:20px">
+		<p class="rehabTxt">Here at Plantopolis we understand that having all plants thriving at home is a difficult task, especially for those who can no longer look after their favorite houseplants. With our knowledge and experience, we can restore those houseplants to their former glory or even surpass them!</p>
+	</div>
+	
+	<div class="howWillWork" style="overflow:auto">
+		<h2 style="font-size:40px">How will it work?</h2>
+		<img src="images/rehabbing/fertilizing.jpg" width="25%" style="float:left;margin:20px">
+		<p class="rehabTxt">Connect with one of our experts to determine if your plant is eligible to be taken in. If so, you can mail the plant to us and we’ll take care of the rest. If after a while you would want to take the plant back in, we will give you a fee and mail it to you. If not, we will put your plant on our store to be sold.</p>
+	</div>
+	
+	<div class="whyUs" style="overflow:auto">
+		<h2 style="font-size:40px">Why us?</h2>
+		<img src="images/rehabbing/collection.png" width="25%" style="float:right;margin:20px">
+		<p class="rehabTxt">Plantopolis is composed of many plant enthusiasts that have been caring for plants for more than a decade. We have special groups of these employees that will specialize in certain types of plants, such as outdoor and indoor plants. We even have some who have studied botanics and understand the science behind our beautiful green friends. </p>
+	</div>
+	
+	
+	<div class="buttonRehabMore">
+		<h2>Interested?</h2>
+		<button class="rehabMore" onclick="openForm()">Click here to connect</button>
+		<br><br><br><br>
+	</div>
+	
+	<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn" onclick="closeForm()">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+	
+	<div class="footer" style="clear:auto">
+		<footer>
+			<br>
+			<p>Author: Kelly Lam</p>
+			<p>Email: aaaaaaaa@aaaaa.aaa</p>
+			<p>made on dreamweaver</p>
+			<p><a href="https://www.figma.com/file/TVGfgsAwrZ1oog83PGC5GH/wireframe?node-id=0%3A1">Wireframe</a></p>
+			<br>
+		</footer>
+	</div>
+</body>
+
+	<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+	
+</html>
