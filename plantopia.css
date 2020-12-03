@@ -393,8 +393,13 @@ footer{
 /*ARTICLES PAGE*/
 .green{
 	background:#A0B89F;
+	cursor:pointer;
 }
 
+.white{
+	background:white;
+	cursor:pointer;
+}
 .articles{
 	font-size:17px;
 	margin:20px;
@@ -511,3 +516,17 @@ h3{
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }
+
+
+
+/*ARTICLE ANIMATIONS*/
+#article1, #article2, #article3, #article4, #article5, #article6, #article7, #article8{
+	transition:1s;
+}
+
+#article1:hover, #article2:hover, #article3:hover, #article4:hover, #article5:hover, #article6:hover, #article7:hover, #article8:hover{
+	transform: scale(1.25);
+	box-shadow: 0 12px 100px 0 #3F5B68,0 12px 100px 0 #3F5B68;
+	
+}
+
