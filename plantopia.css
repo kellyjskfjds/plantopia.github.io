@@ -527,6 +527,15 @@ h3{
 #article1:hover, #article2:hover, #article3:hover, #article4:hover, #article5:hover, #article6:hover, #article7:hover, #article8:hover{
 	transform: scale(1.25);
 	box-shadow: 0 12px 100px 0 #3F5B68,0 12px 100px 0 #3F5B68;
+	overflow:hidden;
 	
 }
 
+.wrapper{
+	min-height:100%;
+	margin-bottom:-50px;
+}
+
+.push, .footer{
+	height:50px;
+}

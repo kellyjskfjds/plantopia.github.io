@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media (min-width: 260px) and (max-width: 899px){
+	
+	/*navigation does not need to be changed*/
+	.navi {
+  		list-style-type: none;
+ 		 margin: 0;
+ 		 padding: 0;
+  		overflow: hidden;
+ 		 background-color: #3F5B68;
+	}
+	.nav_part{
+  		float: left;
+	}
+	li a {
+  		display: block;
+ 		color: white;
+ 		text-align: center;
+  		padding: 14px 16px;
+  		text-decoration: none;
+	}	
+	li a:hover:not(.active) {
+ 		 background-color: #111;
+	}
+	.activeNav {
+  		background-color: #A0B89F;
+	}
+
+	/*Turn off parralax for mobile*/
+	/*
+	.parallax1 {
+   		 background-attachment: scroll;
+  	}
+	.parallax2 {
+   		 background-attachment: scroll;
+  	}
+	*/
+	
+	/*take off divs ontop of photos*/
+	.revPlant, .buyPlant{
+		display:none;
+	}
+	
+	/*change heading sizes to fit onto screen without using two lines*/
+	h1{
+		font-size:200%;
+	}
+	
+	/*fixing buttons on homepage*/
+	.homepgTXT button{
+		transform:scale(2);
+		border:none;
+		font-family: roboto, sans-serif;
+		clear:both;
+		margin:20px;
+	}
+	
+	/*HOPEFULLY fixing the footers for all pages*/
+	footer{
+		text-align:center;
+		background-color: #A0B89F;
+		line-height:40%;
+		font-size:20px;
+	}
+	
+	/*on the articles page the h2 ws folded*/
+	.learnMoreOn{
+		font-size:150%;
+	}
+	
+	/*ARTICLE ANIMATIONS*/
+	#article1, #article2, #article3, #article4, #article5, #article6, #article7, #article8{
+		transition:1s;
+	}
+	#article1:hover, #article2:hover, #article3:hover, #article4:hover, #article5:hover, #article6:hover, #article7:hover, #article8:hover{
+		transform: scale(1.1);
+		box-shadow: 0 12px 100px 0 #3F5B68,0 12px 100px 0 #3F5B68;
+		overflow:hidden;
+	}
+	
+	/*pictures on categories page*/
+	.topTwo img{
+		width:40%;
+	}
+	.rowTwo img,.rowThree img,.rowFour img, .rowFive img, .rowSix img {
+		width:25%;
+	}
+	
+	/*img on add cart page is too small so ill fix it here*/
+	.productInfoWH img{
+		width:50%;
+	}
+	
+	/*button on product info is overlappng*/
+	.putCart{
+		width:20%;
+		margin-right:100%;
+		padding:0;
+		font-size:75%;
+		float:right;
+	}
+	
+	/*ul list is uhhh a problem*/
+	.productInfoWH ul{
+		float:right;
+	}
+	.productInfo{
+		font-size:100%
+	}
+}
